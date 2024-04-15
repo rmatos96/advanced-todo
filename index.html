@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/5ede498db760540004f2c5e4.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de afazeres avançada</title>
+  </head>
+  <body class="bg-gray">
+    <div class="max-w-[450px] mt-[3rem] mx-[auto] p-5 bg-bg rounded-[15px]">
+      <header class="text-center pt-[0] px-4 pb-4 border-b border-[#ccc]">
+        <h1 class="text-4xl font-bold">Lista de afazeres avançado</h1>
+      </header>
+
+      <form class="p-4 border-b border-[#ccc]" id="todo-form" action="">
+        <p class="mb-[0.5rem] font-bold">Adicione a sua tarefa:</p>
+        <div class="flex">
+          <input class="border-2 py-[0.25rem] px-2 mr-[.3rem]" type="text" id="todo-input" placeholder="O que vai fazer?">
+          <button class="bg-bg text-102f5e border-2 py-[0.3rem] px-[0.6rem] text-base cursor-pointer flex justify-center items-center rounded-md transition-colors duration-[0.4s] hover:bg-102f5e" type="submit">
+            <i class="fa-thin fa-plus hover:text-bg "></i>
+          </button>
+        </div>
+      </form>
+
+      <form class="p-4 border-b border-[#ccc] hide" id="edit-form" action="">
+        <p class="mb-[0.5rem] font-bold">Edite a sua tarefa:</p>
+        <div class="flex">
+          <input type="text" id="edit-input" class="border-2 py-[0.25rem] px-2 mr-[.3rem]">
+          <button type="submit" class="bg-bg text-102f5e border-2 py-[0.3rem] px-[0.6rem] text-base cursor-pointer flex justify-center items-center rounded-md transition-colors duration-[0.4s] hover:bg-102f5e">
+            <i class="fa solid fa-check-double hover:text-bg "></i>
+          </button>
+        </div>
+        <button class="bg-bg text-102f5e border-2 py-[0.3rem] px-[0.6rem] text-base cursor-pointer flex justify-center items-center rounded-md transition-colors duration-[0.4s] hover:bg-102f5e hover:text-bg mt-4" id="cancel-edit-btn">Cancelar</button>
+      </form>
+
+
+      <div id="todo-list">
+        
+      </div>
+    </div>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="/main.js" defer></script>
+  </body>
+</html>
